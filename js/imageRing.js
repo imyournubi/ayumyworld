@@ -33,7 +33,7 @@ export class FlowerRingSystem {
         // Cache cho sin/cos để tối ưu performance
         this.sinCache = new Map();
         this.cosCache = new Map();
-        this.cacheSize = 1000;
+        this.cacheSize = 500;
 
         // === DEVICE OPTIMIZATION ===
         this.deviceTier = this.detectDeviceTier();
