@@ -11,7 +11,7 @@ export class HeartText {
 
         // Configuration options
         this.config = {
-            text: 'Only For U, Ayu 🤍',
+            text: 'Ayu, Do You Wanna Be My Girlfriend?',
             size: 20,
             height: 2,
             curveSegments: 12,
