@@ -33,7 +33,7 @@ export class FlowerRingSystem {
         // Cache cho sin/cos để tối ưu performance
         this.sinCache = new Map();
         this.cosCache = new Map();
-        this.cacheSize = 500;
+        this.cacheSize = 1000;
 
         // === DEVICE OPTIMIZATION ===
         this.deviceTier = this.detectDeviceTier();
@@ -106,7 +106,7 @@ export class FlowerRingSystem {
                 case 'medium':
                     // iOS mới, Android trung bình
                     this.maxMaterialCacheSize = 15;
-                    this.cacheSize = 500;
+                    this.cacheSize = 750;
                     if (this.flyingConfig) {
                         this.flyingConfig.batchSize = 24;
                         this.flyingConfig.totalBatches = 20;
@@ -116,7 +116,7 @@ export class FlowerRingSystem {
                 case 'high':
                     // Desktop, flagship mobile
                     this.maxMaterialCacheSize = 20;
-                    this.cacheSize = 500;
+                    this.cacheSize = 1000;
                     if (this.flyingConfig) {
                         this.flyingConfig.batchSize = 32;
                         this.flyingConfig.totalBatches = 25;
@@ -372,14 +372,6 @@ export class FlowerRingSystem {
                 'assets/images/b5.png',
                 'assets/images/b6.png',
                 'assets/images/b7.png',
-                'assets/images/b8.png',
-                'assets/images/b9.png',
-                'assets/images/b10.png',
-                'assets/images/b11.png',
-                'assets/images/b12.png',
-                'assets/images/b13.png',
-                'assets/images/b14.png',
-                'assets/images/b15.png'
                 // tambahkan path lain di sini, pastikan file-nya ada
             ]);
         },
