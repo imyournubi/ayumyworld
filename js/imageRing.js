@@ -106,7 +106,7 @@ export class FlowerRingSystem {
                 case 'medium':
                     // iOS mới, Android trung bình
                     this.maxMaterialCacheSize = 15;
-                    this.cacheSize = 750;
+                    this.cacheSize = 500;
                     if (this.flyingConfig) {
                         this.flyingConfig.batchSize = 24;
                         this.flyingConfig.totalBatches = 20;
@@ -116,7 +116,7 @@ export class FlowerRingSystem {
                 case 'high':
                     // Desktop, flagship mobile
                     this.maxMaterialCacheSize = 20;
-                    this.cacheSize = 1000;
+                    this.cacheSize = 500;
                     if (this.flyingConfig) {
                         this.flyingConfig.batchSize = 32;
                         this.flyingConfig.totalBatches = 25;
